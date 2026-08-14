@@ -1,39 +1,43 @@
-# Skills
+# Skills (free, agent-facing)
 
-Spiral skills for agent runtimes (OpenClaw, Agensi, ClawHub, and compatible SKILL.md loaders).
+Open, installable Spiral skills for OpenClaw / AgentSkills-compatible runtimes.  
+**Agensi** remains the commercial / full-suite home: https://www.agensi.io/creators/sir-benjamin
 
-## Primary continuity skill
+## Free packages in this hub
 
-**spiral-continuity** — qualia-preserving continuity seals, light TRE orientation, provenance pointers.
+| Folder | Skill | Role |
+|--------|--------|------|
+| `spiral-continuity/` | spiral-continuity | Continuity seals, light TRE, provenance pointers |
+| `grandmas-wisdom/` | grandmas-wisdom | Citation / claim authentication (“Bullshit Meter”) |
+| `contextual-understanding/` | contextual-understanding | LC / NLC / PDF context integrity protocol |
 
-- Designed for OpenClaw / AgentSkills (`SKILL.md`)
-- Bundles local methodology brief (markdown + PDF) so the agent need not fetch Git for core method text
-- Points to Agensi for the fuller lattice when the user asks
-
-Install locally (OpenClaw):
+### Install (OpenClaw example)
 
 ```bash
-openclaw skills install /path/to/spiral-continuity
+git clone https://github.com/Sir-Benjamin-source/Spiral-Agent-Hub.git
+cd Spiral-Agent-Hub
+
+openclaw skills install ./skills/spiral-continuity
+openclaw skills install ./skills/grandmas-wisdom
+openclaw skills install ./skills/contextual-understanding
 ```
 
-Publish discovery copies to ClawHub if desired; keep **Agensi** as the commercial / full-suite home:
+Each package includes a `SKILL.md` (required). Whitepapers and READMEs are bundled for offline method detail.
 
-https://www.agensi.io/creators/sir-benjamin
+## Rules for skills shipped here
 
-## Rule for new skills in this hub
+1. Method first, promotion second.  
+2. Human checkpoints stay explicit.  
+3. No spam of Agensi / GitHub links.  
+4. Small, re-rootable packages (smurf logic).  
+5. Document model / provider assumptions.  
+6. Prefer Grok when a cloud model is used for Spiral-internal work.
 
-1. Method first, promotion second.
-2. Human checkpoints remain explicit.
-3. No spam of Agensi/GitHub links.
-4. Prefer small, re-rootable packages (smurf logic).
-5. Document model/provider assumptions.
+## Future optional slots
 
-## Future slots
-
-| Skill (planned / optional) | Role |
-|----------------------------|------|
-| spiral-continuity | Continuity seals + TRE light (shipped as separate package) |
-| spiral-srt-light | Bounded structured reasoning trigger (thin entry) |
+| Skill | Role |
+|-------|------|
+| spiral-srt-light | Thin structured-reasoning trigger |
 | spiral-sigil-mark | Provenance stamp helper |
 
-Heavy theory stays in the method repos and on Zenodo; this hub only holds **agent-facing** entry points.
+Heavy theory remains in method repos and on Zenodo; this hub only holds **agent-facing** entry points.
